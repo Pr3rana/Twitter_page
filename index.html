@@ -14,28 +14,31 @@
 <body>
     <main>
       <div class="topnav row">
-        <a class="active col-xs" href="#home">Home</a>
-        <a class="col-xs" href="#news">News</a>
-        <a class="col-xs" href="#contact">Contact</a>
-        <a class="col-xs" href="#contact">Messages</a>
-        <div class="col-sm" style="text-align: center; padding: 14px 16px;">
+        
+        <li><a class="active col-xs" href="#home">Home</a></li>
+        <li><a class="col-xs" href="#news">News</a></li>
+        <li><a class="col-xs" href="#contact">Contact</a></li>
+        <li> <a class="col-xs" href="#contact">Messages</a></li>
+        <div class="col-sm" style="text-align: center; padding: 10px 16px;">
           <img src="public/images/twitter.png">
         </div>
-        <div class="input-group col-sm-2" style="height: 1.5rem;top: .5rem;">
-          <input type="text" id="input" class="form-control" placeholder="Search Twitter" style="border-color:white; border-radius: 1rem 0rem 0rem 1rem;">
+        <div class="input-group col-sm-2" style="height: 2.2rem;top: .3rem; width: 4rem; padding-left: 0px;padding-right: 0px; flex-wrap: nowrap">
+          <input type="text" id="input" class="form-control" placeholder="Search Twitter" style="font-size: 12px; background-color:#f5f8fa; border: 1px solid #e6ecf0; padding: 8px 32px 8px 12px; border-radius: 1rem 0rem 0rem 1rem;">
           <span id="find" class="input-group-append">
-            <button class="btn btn-secondary" type="button" style="background-color:white; border-color:white; border-radius: 0rem 1rem 1rem 0rem;">
-              <i class="fa fa-search" style="color:black"></i>
+            <button class="btn btn-secondary" type="button" style="background-color:#f5f8fa; border: 1px solid #e6ecf0; border-left: none; border-radius: 0rem 1rem 1rem 0rem;">
+              <i class="fa fa-search" style="font-size: 12px; color:black"></i>
             </button>
           </span>
         </div>
-        <div class="input-group col-sm-1"style="height: 2rem;top: .5rem;">
-          <button type="button" style="border-radius: 1.6rem; border-color: teal">
+        <div class="input-group col-sm-1">
+          <button type="button" style="border-radius: 1.6rem; border-color: teal;">
             <img src="public/images/angel.png" style="padding: .2rem 0rem;">
           </button>
         </div>
-        <div class="input-group col-sm-2" style="height: 2rem;top: .5rem;">
-          <button class="btn btn-primary" type="button" style="border-radius: 1.6rem; border-color: teal; background-color:#76A9EA">Tweet</button>
+        <div class="input-group col-sm-2" style="top: .3rem;">
+          <button class="btn-primary" type="button" style="height: 2.2rem; border-radius: 1rem; background-color:#76A9EA;">
+            <span style="    padding: 6px 16px;">Tweet</span>
+          </button>
         </div>
       </div>
       <div class="row">

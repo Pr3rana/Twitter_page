@@ -4,22 +4,30 @@ body {margin:0;}
   overflow: hidden;
   background-color: #f1f1f1;
   padding-left: 4rem;
+  height: 46px;
+}
+li{
+  position: relative;
+  list-style-type: none;
+  height: 46px;
+  top: .9rem;
+  padding-left: 2rem;
 }
 .topnav a {
-  float: left;
   display: block;
   color: black;
   text-align: center;
-  padding: 15px 12px 6px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 13px;
+  font-weight: bold;
   border-bottom: 3px solid transparent;
+  padding-bottom: .6rem;
 }
 
 .topnav a:hover {
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid skyblue;
 }
 
 .topnav a.active {
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid rgb(73, 173, 212);
 }
