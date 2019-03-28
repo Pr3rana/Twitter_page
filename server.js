@@ -8,4 +8,4 @@ app.get('/', (req, res) => {
 });
 app.use(express.static(__dirname));
 console.log(__dirname);
-app.listen(8080, () => console.log('DataViz app is listening on port '+port+"!"));
+app.listen(8080, () => console.log('Twitter page is listening on port '+port+"!"));

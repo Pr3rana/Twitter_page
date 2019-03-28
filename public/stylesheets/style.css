@@ -8,7 +8,8 @@ body {margin:0;}
 .topnav {
   overflow: hidden;
   background-color: #f1f1f1;
-  padding-left: 4rem;
+  padding-left: 6.938rem;
+  padding-right: 6.938rem;
   height: 46px;
 }
 li{
@@ -36,6 +37,12 @@ li{
 .topnav a.active {
   border-bottom: 3px solid rgb(73, 173, 212);
 }
+.dropdown-toggle{
+  padding: 0px;
+  font-size: 1.5rem;
+  border: none;
+  height: 0px;
+}
 /* profile card */
 .twPc-div {
     background: #fff none repeat scroll 0 0;
@@ -56,8 +63,8 @@ li{
   color: black;
   margin-top:.3rem;
 }
-#name a:hover{
-  text-decoration: none;
+#link a{
+  color: grey;
 }
 .twPc-block {
   display: block !important;
