@@ -1,200 +1,298 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <script src="/public/javascripts/jquery/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="public/stylesheets/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-    <main>
-      <!--Nav bar-->
-      <div class="topnav row"> 
-        <li style="padding-left:0px"><a class="active col-xs" href="#home">Home</a></li>
-        <li><a class="col-xs" href="#news">News</a></li>
-        <li><a class="col-xs" href="#contact">Contact</a></li>
-        <li> <a class="col-xs" href="#contact">Messages</a></li>
-        <div style="text-align: center; padding: .6rem 18rem .6rem 18rem;">
-          <img src="public/images/twitter.png">
-        </div>
-        <div class="input-group" style="height: 2.25rem;top: .28rem; width: 13.82rem; padding-left: 0px;padding-right: 0px; flex-wrap: nowrap">
-          <input type="text" id="input" class="form-control" placeholder="Search Twitter" style="font-size: 12px; background-color:#f5f8fa; border: 1px solid #e6ecf0; padding: 8px 32px 8px 12px; border-radius: 1rem 0rem 0rem 1rem;">
-          <span id="find" class="input-group-append">
-            <button class="btn btn-secondary" type="button" style="background-color:#f5f8fa; border: 1px solid #e6ecf0; border-left: none; border-radius: 0rem 1rem 1rem 0rem;">
-              <i class="fa fa-search" style="font-size: 21px; color:rgb(148, 141, 141);"></i>
-            </button>
-          </span>
-        </div>
-        <div class="input-group" style="padding: 0px 0px 0px 10px; max-width: 4.5rem;">
-          <button type="button" style="border-radius: 1.6rem; border-color: teal;">
-            <img src="public/images/angel.png" style="padding: .2rem 0rem;">
-          </button>
-        </div>
-        <div class="input-group" style="top: .3rem; max-width: 2.44rem;">
-          <button class="btn-primary" type="button" style="height: 2.2rem; border-radius: 1rem; background-color:#76A9EA;">
-            <span style="padding: 5px 5px;">Tweet</span>
-          </button>
-        </div>
-      </div>
-      <!--Nav bar end-->
+	<html>
 
-      <!--detail card-->
-      <div class="row no-gutters" style="margin-left:6.938rem; margin-right: 6.938rem;">
-    
-        <div class="row col">
-          <!-- profile card -->
-          <div class="col card twPc-div no-gutters">
-              <img class="card-img-top profile_bg">
-          
-            <div>
-              <div class="twPc-button">
-                      <a href="https://twitter.com/mertskaplan" class="btn btn-primary" style="display:inline;">Follow</a>  
-              </div>
-              <button class="profileLink" type="button">
-                  <a title="Pr3rna"  href="https://twitter.com/Prerna26788171">
-                      <img src="public/images/angel.png" style="padding: .2rem 0rem;">
-                  </a>  
-              </button>
-          
-              <div>
-                <span id="name">
-                    <a href="https://twitter.com/Prerna26788171" style="color:black">Pr3rna</a>
-                </span>
-                <div class="w-100"></div>
-                <span id="link">
-                    <a href="https://twitter.com/Prerna26788171">@<span>Prerna26788171</span></a>
-                </span>  
-              </div>
-          
-              <div class="twPc-divStats">
-                <ul class="twPc-Arrange">
-                  <li class="twPc-ArrangeSizeFit">
-                    <a href="https://twitter.com/Prerna26788171" title="9.840 Tweet">
-                      <span class="twPc-StatLabel twPc-block">Tweets</span>
-                      <span class="twPc-StatValue">9.840</span>
-                    </a>
-                  </li>
-                  <li class="twPc-ArrangeSizeFit">
-                    <a href="https://twitter.com/Prerna26788171/following" title="885 Following">
-                      <span class="twPc-StatLabel twPc-block">Following</span>
-                      <span class="twPc-StatValue">885</span>
-                    </a>
-                  </li>
-                  <li class="twPc-ArrangeSizeFit">
-                    <a href="https://twitter.com/Prerna26788171/followers" title="1.810 Followers">
-                      <span class="twPc-StatLabel twPc-block">Followers</span>
-                      <span class="twPc-StatValue">1.810</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!--Profile crad end-->
-          <div class="w-100"></div>
-          <!--option card-->
-          <div class="col no-gutters">
-              <div class="card no-gutters" style="max-width:19rem; margin-top: 1rem;" >
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                  </ul>
-                  <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                  </div>
-                </div>
-          </div>
-          <!--option card-->
-        </div>
-    <!--detail card end-->
-    <!-- tweet card -->
-      <div class="row col-6 no-gutters" style="margin:2rem 2rem;">
-          <div class="col-sm" style="height:80vh">
-              <div class="card">
-                <div class="card-header" style="background-color:white; border-bottom:none;">
-                  <div class="input-group" style="padding: 0px 0px 0px 10px; max-width: 4.5rem;">
-                      <button type="button" style="border-radius: 1.6rem; border-color: teal;">
-                        <img src="public/images/angel.png" style="padding: .2rem 0rem;">
-                      </button>
-                  </div>
-                  <div style="position:absolute; left: 6rem; top: 1rem;"><span><a style="color: black"href="https://twitter.com/Prerna26788171">Pr3rna</a></span></div>
-                  <div style="position:absolute; left: 9.5rem; top: 1rem;"><span><a style="font-size: 14px; color: grey"href="https://twitter.com/Prerna26788171">@Prerna26788171 </a></span></div>
-                  <div style="position:absolute; left: 17.3rem; top: 1rem;"><span><a style="font-size: 16px; color: grey"href="#">.</a></span></div>
-                  <div style="position:absolute; left: 17.9rem; top: 1rem;"><span><a style="font-size: 16px; color: grey"href="#">1h</a></span></div>
-                  <!--Dropdown menu-->
-                  <div style="position:absolute; top: .5rem; right: 1rem;">
-                    <button class="dropdown-toggle" data-toggle="dropdown" style="color:grey;"></button>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Separated link</a>
-                      </div>
-                  </div>
-                </div>
-                <!--Dropdown menu end-->
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                  </div>
-                  <div class="card-footer" style="height:3rem; background-color:white; border-top:none">
-                    <div style="position:absolute; left: 6rem;">
-                      <img src="/public/images/chat.png">
-                      <span style="font-size: 16px; color: grey">1.1k</span>
-                    </div>
-                    <div style="position:absolute; left: 11rem;">
-                        <img src="/public/images/retweet.png">
-                        <span style="font-size: 16px; color: grey">2.5k</span>
-                    </div>
-                    <div style="position:absolute; left: 16rem;">
-                        <img src="/public/images/like.png">
-                        <span style="font-size: 16px; color: grey">4.1k</span>
-                    </div>
-                    <div style="position:absolute; left: 21rem;">
-                        <img src="/public/images/mail.png">
-                    </div>
-                  </div>
-                </div>
-          </div>
-      </div>
-    <!--Tweet card end-->
-    <!--Suggestion card-->
-        <div class="row col no-gutters">
-            <div class="row col" style="height:80vh;">
-              <div class="card" style="border: 1px solid #e1e8ed;height: 21.6rem;max-width: 19rem;margin-top: 2rem;">
-                  <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Cras justo odio</li>
-                      <li class="list-group-item">Dapibus ac facilisis in</li>
-                      <li class="list-group-item">Vestibulum at eros</li>
-                    </ul>
-                    <div class="card-body">
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
-                  </div>
-                    
-              </div>
-            </div>
-       
-        </div>
-    </main>
-</body>
-</html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Page Title</title>
+		<script src="/public/javascripts/jquery/jquery-3.3.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+			crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="public/stylesheets/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+		<main>
+			<!--Nav bar-->
+			<div class="topnav row">
+				<li style="padding-left:0px;"><a class="active col-xs " href="#home"><span><img src="/public/images/home.png" style="padding: 2px;margin: 2px;"/></span><span>Home</span></a></li>
+				<li><a class="col-xs" href="#notifications"><img src="/public/images/notification.png" style="padding: 2px;margin: 2px;"/>Notifications</a></li>
+				<li> <a class="col-xs" href="#messages"><img src="/public/images/message.png" style="padding: 2px;margin: 2px;"/>Messages</a></li>
+				<div style="text-align: center; padding: .6rem 12rem .6rem 18rem;">
+					<img src="public/images/twitter.png">
+				</div>
+				<div class="input-group"
+					style="height: 2.25rem;top: .28rem; width: 13.82rem; padding-left: 0px;padding-right: 0px; flex-wrap: nowrap">
+					<input type="text" id="input" class="form-control" placeholder="Search Twitter"
+						style="font-size: 12px; background-color:#f5f8fa; border: 1px solid #e6ecf0; padding: 8px 32px 8px 12px; border-radius: 1rem 0rem 0rem 1rem;">
+					<span id="find" class="input-group-append">
+						<button class="btn btn-secondary" type="button"
+							style="background-color:#f5f8fa; border: 1px solid #e6ecf0; border-left: none; border-radius: 0rem 1rem 1rem 0rem;">
+							<i class="fa fa-search" style="font-size: 21px; color:rgb(148, 141, 141);"></i>
+						</button>
+					</span>
+				</div>
+				<div class="input-group" style="padding: 0px 0px 0px 10px; max-width: 4.5rem;">
+					<button type="button" style="border-radius: 1.6rem; border-color:#83d1ff">
+						<img src="public/images/angel.png" style="padding: .2rem 0rem;">
+					</button>
+				</div>
+				<div class="input-group" style="top: .3rem; max-width: 2.44rem;">
+					<button class="btn-primary" type="button"
+						style="height: 2.2rem; border-radius: 1rem; background-color:#83d1ff; border:none;">
+						<span style="padding: 5px 5px;">Tweet</span>
+					</button>
+				</div>
+			</div>
+			<!--Nav bar end-->
+
+			<!--detail card-->
+			<div class="row" style="margin-left:6.938rem; margin-right: 6.938rem;">
+
+				<div class="row col">
+					<!-- profile card -->
+					<div class="col card twPc-div no-gutters">
+						<div class="card-img-top profile_bg"></div>
+
+						<div>
+							<button class="profileLink" type="button">
+								<a title="Pr3rna" href="https://twitter.com/Prerna26788171">
+									<img src="public/images/angel.png" style="padding: .2rem 0rem;">
+								</a>
+							</button>
+
+							<div>
+								<span id="name">
+									<a href="https://twitter.com/Prerna26788171" style="color:black">Pr3rna</a>
+								</span>
+								<div class="w-100"></div>
+								<span id="link">
+									<a href="https://twitter.com/Prerna26788171">@<span>Prerna26788171</span></a>
+								</span>
+							</div>
+
+							<div class="twPc-divStats">
+								<ul class="twPc-Arrange">
+									<li class="twPc-ArrangeSizeFit">
+										<a href="https://twitter.com/Prerna26788171" title="9.840 Tweet">
+											<span class="twPc-StatLabel twPc-block">Tweets</span>
+											<span class="twPc-StatValue" style="color:#83D1FF">9.840</span>
+										</a>
+									</li>
+									<li class="twPc-ArrangeSizeFit">
+										<a href="https://twitter.com/Prerna26788171/following" title="885 Following">
+											<span class="twPc-StatLabel twPc-block">Following</span>
+											<span class="twPc-StatValue" style="color:#83D1FF">885</span>
+										</a>
+									</li>
+									<li class="twPc-ArrangeSizeFit">
+										<a href="https://twitter.com/Prerna26788171/followers" title="1.810 Followers">
+											<span class="twPc-StatLabel twPc-block">Followers</span>
+											<span class="twPc-StatValue" style="color:#83D1FF">1.810</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--Profile crad end-->
+					<div class="w-100"></div>
+					<!--option card-->
+					<div class="col no-gutters">
+						<div class="card no-gutters" style="max-width:19rem;">
+							<div class="card-body" style="padding-bottom:0px;">
+								<div class="card-title">
+									<a style="text-decoration:none; font-size:1.3rem; color:black;" href="#">Trends for you</a>
+									<a href="#" style="text-decoration:none; font-size:1.3rem; color:black;">&nbsp;.&nbsp;</a>
+									<a href="#" style="font-size:.8rem; color:grey;">Change</a>
+								</div>
+							</div>
+							<ul class="list-group list-group-flush" style="padding-top:0px;">
+								<li>
+									<a href="#">#HannaOnPrime</a>
+									<p>Not your typical teenager&nbsp;..&nbsp;or spy!</p>
+								</li>
+								<li>
+									<a href="#">#SRHvRR</a>
+									<p>30.9k Tweets</p>
+								</li>
+								<li>
+									<a href="#">Sanju Samson</a>
+									<p>10.4k Tweets</p>
+								</li>
+								<li>
+									<a href="#">#KKRvKIXP</a>
+									<p>23.9k Tweets</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--option card-->
+				</div>
+				<!--detail card end-->
+				<div class="col-6 container">
+					<div class="row" style="margin-top: 2rem;">
+						<!--Search bar-->
+					<div class="col col-sm-offset-2">
+						<div class="row no-gutters" style="background-color: #F3FAFF; height:4rem; padding: .5rem">
+							<div class="col-1 input-group">
+								<button type="button" style="border-radius: 1.6rem; border-color: teal;">
+									<img src="public/images/angel.png" style="padding: .1rem 0rem;">
+								</button>
+							</div>
+							<div class="col-11" style="padding-left: .5rem;">
+								<input type="text" id="input" class="form-control body-search" placeholder="What's Happening?">
+							</div>
+						</div>
+					</div>
+					<!--Search bar end-->
+					<div class="w-100"></div>
+					<!-- tweet card -->
+					<div class="col col-sm-offset-2">
+						<div class="card">
+							<div class="card-header" style="background-color:white; border-bottom:none;">
+								<div class="input-group" style="padding: 0px 0px 0px 10px; max-width: 4.5rem;">
+									<button type="button" style="border-radius: 1.6rem; border-color: teal;">
+										<img src="public/images/angel.png" style="padding: .2rem 0rem;">
+									</button>
+								</div>
+								<div style="position:absolute; left: 6rem; top: 1rem;"><span><a style="color: black"
+											href="https://twitter.com/Prerna26788171">Pr3rna</a></span></div>
+								<div style="position:absolute; left: 9.5rem; top: 1rem;"><span><a style="font-size: 14px; color: grey"
+											href="https://twitter.com/Prerna26788171">@Prerna26788171 </a></span></div>
+								<div style="position:absolute; left: 17.3rem; top: 1rem;"><span><a style="font-size: 16px; color: grey"
+											href="#">.</a></span></div>
+								<div style="position:absolute; left: 17.9rem; top: 1rem;"><span><a style="font-size: 16px; color: grey"
+											href="#">1h</a></span></div>
+								<!--Dropdown menu-->
+								<div style="position:absolute; top: .5rem; right: 1rem;">
+									<button class="dropdown-toggle" data-toggle="dropdown" style="color:grey;"></button>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+										<a class="dropdown-item" href="#">Something else here</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#">Separated link</a>
+									</div>
+								</div>
+							</div>
+							<!--Dropdown menu end-->
+							<div class="card-body">
+								<h5 class="card-title">Twitter Page</h5>
+								<p class="card-text">As discussed over call, I have created a static prototype of twitter page using HTML5, CSS3, and bootstrap. <br>Please let me know if you want any further modification. <a href="https://github.com/Pr3rana/Twitter_page">Github</a></p>
+								<a href="#">#coding</a>
+								<a href="#">#html5</a>
+								<a href="#">#csslove</a>
+								<a href="#">#roboto</a>
+								<a href="#">#bootstrap</a>
+							</div>
+							<div class="card-footer" style="height:3rem; background-color:white; border-top:none">
+								<div style="position:absolute; left: 6rem;">
+									<img src="/public/images/chat.png">
+									<span style="font-size: 16px; color: grey">1.1k</span>
+								</div>
+								<div style="position:absolute; left: 11rem;">
+									<img src="/public/images/retweet.png">
+									<span style="font-size: 16px; color: grey">2.5k</span>
+								</div>
+								<div style="position:absolute; left: 16rem;">
+									<img src="/public/images/like.png">
+									<span style="font-size: 16px; color: grey">4.1k</span>
+								</div>
+								<div style="position:absolute; left: 21rem;">
+									<img src="/public/images/mail.png">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Tweet card end-->
+					</div>
+					
+				<!--Suggestion card-->
+				<div class="row col">
+					<div class="row col no-gutters" style="height:80vh;">
+						<div class="card" style="border: 1px solid #e1e8ed;height: 21.6rem;max-width: 19rem;margin-top: 2rem;">
+							<div class="card-body" style="max-height: 1rem;">
+								<div class="card-title">
+									<a style="text-decoration:none; font-size:1.3rem; color:black;" href="#">Who to follow</a>
+									<a href="#" style="text-decoration:none; font-size:1.3rem; color:black;">&nbsp;.&nbsp;</a>
+									<a href="#" style="font-size:.8rem; color:grey;">Refresh</a>
+									<a href="#" style="text-decoration:none; font-size:1.3rem; color:black;">&nbsp;.&nbsp;</a>
+									<a href="#" style="font-size:.8rem; color:grey;">View all</a>
+								</div>
+							</div>
+							<ul class="list-group list-group-flush">
+								<li>
+										<div class="card-header" style="background-color:white; border-bottom:none; padding-left: 0px;">
+											<div class="input-group" style="padding: 0px 0px 0px 10px; max-width: 4.5rem;">
+												<button type="button" style="border-radius: 1.6rem; border-color: teal;">
+													<img src="public/images/cool.png" style="padding: .2rem 0rem;">
+												</button>
+											</div>
+											<div style="position:absolute; left: 5rem; top: 1rem;"><span><a style="color: black"
+														href="https://twitter.com/Prerna26788171">Ruchi</a></span></div>
+											<div style="position:absolute; left: 8.5rem; top: 1rem;"><span><a style="font-size: 14px; color: grey"
+														href="https://twitter.com/Prerna26788171">@Cool6788171</a></span></div>
+											<div class="twPc-button">
+													<button class="btn-primary" type="button" style="height: 2.2rem; border-radius: 1rem; background-color:white; border-color: #83d1ff;">
+														<a href="https://twitter.com/Prerna26788171" style="padding: 5px 5px; text-decoration: none; color: #83d1ff">Follow</a>
+													</button> 
+											</div>
+									</div>
+								</li>
+								<li>
+										<div class="card-header" style="background-color:white; border-bottom:none; padding-left: 0px;">
+											<div class="input-group" style="padding: 0px 0px 0px 10px; max-width: 4.5rem;">
+												<button type="button" style="border-radius: 1.6rem; border-color: teal;">
+													<img src="public/images/happy.png" style="padding: .2rem 0rem;">
+												</button>
+											</div>
+											<div style="position:absolute; left: 5rem; top: 1rem;"><span><a style="color: black"
+														href="https://twitter.com/Prerna26788171">Rashmi</a></span></div>
+											<div style="position:absolute; left: 8.5rem; top: 1rem;"><span><a style="font-size: 14px; color: grey"
+														href="https://twitter.com/Prerna26788171">@Happy26788171</a></span></div>
+											<div class="twPc-button">
+													<button class="btn-primary" type="button" style="height: 2.2rem; border-radius: 1rem; background-color:white; border-color: #83d1ff;">
+														<a href="https://twitter.com/Prerna26788171" style="padding: 5px 5px; text-decoration: none; color: #83d1ff">Follow</a>
+													</button> 
+											</div>
+									</div>
+								</li>
+								<li>
+										<div class="card-header" style="background-color:white; border-bottom:none; padding-left: 0px;">
+											<div class="input-group" style="padding: 0px 0px 0px 10px; max-width: 4.5rem;">
+												<button type="button" style="border-radius: 1.6rem; border-color: teal;">
+													<img src="public/images/inlove.png" style="padding: .2rem 0rem;">
+												</button>
+											</div>
+											<div style="position:absolute; left: 5rem; top: 1rem;"><span><a style="color: black"
+														href="https://twitter.com/Prerna26788171">Neha</a></span></div>
+											<div style="position:absolute; left: 8.5rem; top: 1rem;"><span><a style="font-size: 14px; color: grey"
+														href="https://twitter.com/Prerna26788171">@love26788171</a></span></div>
+											<div class="twPc-button">
+													<button class="btn-primary" type="button" style="height: 2.2rem; border-radius: 1rem; background-color:white; border-color: #83d1ff;">
+														<a href="https://twitter.com/Prerna26788171" style="padding: 5px 5px; text-decoration: none; color: #83d1ff">Follow</a>
+													</button> 
+											</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</main>
+	</body>
+
+	</html>

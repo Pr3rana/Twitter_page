@@ -1,4 +1,8 @@
-body {margin:0;}
+body {
+  margin:0;
+  background-color: #f1f1f1;
+  font-family: 'Roboto', sans-serif;
+}
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -7,41 +11,52 @@ body {margin:0;}
 }
 .topnav {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #fff;
   padding-left: 6.938rem;
   padding-right: 6.938rem;
-  height: 46px;
+  /* padding: 3rem; */
+  height: 50px;
+  border-bottom: 1px solid rgba(0,0,0,0.25);
 }
 li{
   position: relative;
   list-style-type: none;
-  height: 46px;
-  top: .9rem;
-  padding-left: 2rem;
+  /* height: 46px; */
+  top: .75rem;
+  padding-left: .5rem;
 }
 .topnav a {
-  display: block;
+  display: inline;
   color: black;
   text-align: center;
   text-decoration: none;
   font-size: 13px;
   font-weight: bold;
   border-bottom: 3px solid transparent;
-  padding-bottom: .6rem;
+  padding-bottom: .8rem;
 }
 
 .topnav a:hover {
-  border-bottom: 3px solid skyblue;
+  border-bottom: 3px solid #83D1FF;
 }
 
 .topnav a.active {
-  border-bottom: 3px solid rgb(73, 173, 212);
+  border-bottom: 3px solid #83D1FF;
+  font-weight: bold;
+  color: #83D1FF;
 }
 .dropdown-toggle{
   padding: 0px;
   font-size: 1.5rem;
   border: none;
   height: 0px;
+}
+.body-search{
+  background: url(/public/images/picture.png) no-repeat right;
+  height: 3rem;
+  padding: .5rem;
+  border-radius: .6rem;
+  background-position-x: 30rem;
 }
 /* profile card */
 .twPc-div {
@@ -53,7 +68,7 @@ li{
     margin-top: 2rem;
 }
 .profile_bg {
-  background-image: url("https://pbs.twimg.com/profile_banners/50988711/1384539792/600x200");
+  background-color: #83D1FF;
   background-position: 0 50%;
   background-size: 100% auto;
   height: 95px;
@@ -70,15 +85,19 @@ li{
   display: block !important;
 }
 .twPc-button {
-  margin: -35px -10px 0;
   text-align: right;
   width: 100%;
 }
+.twPc-button a{
+  text-align: center;
+  border-radius: .7rem;
+  height: 2rem;
+}
 .profileLink {
-  border-radius: 6px;
+  border-radius: 45px;
   display: inline-block !important;
   margin: -30px 5px 0 8px;
-  padding: 1rem;
+  padding: .9rem;
   float: left;
 }
 .twPc-avatarImg {
